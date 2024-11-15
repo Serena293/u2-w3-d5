@@ -15,7 +15,13 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Navbar</a>
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="./assets/img/dadi.jpg"
+              alt="dice"
+              width="100px"
+              class="rounded-circle"
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -30,12 +36,14 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-            
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="backoffice.html">Backoffice</a>
+              </li> -->
+            </ul>
             <form class="d-flex" role="search">
               <input
                 class="form-control me-2"
@@ -52,31 +60,43 @@
       </nav>
       <h1>Dice & Decks</h1>
     </header>
-    <main class="flex-grow-1">     <form id="formNewProduct">
+    <main class="flex-grow-1">
+      <form id="formNewProduct">
         <div class="mb-3">
           <label for="newProduct" class="form-label">Product name:</label>
-          <input class="form-control" id="newProduct" type="text" required>
+          <input class="form-control" id="newProduct" type="text" required />
         </div>
-      
+
         <div class="mb-3">
           <label for="price" class="form-label">Price:</label>
-          <input class="form-control" id="price" type="number" step="0.01" required>
+          <input
+            class="form-control"
+            id="price"
+            type="number"
+            step="0.01"
+            required
+          />
         </div>
-      
+
         <div class="mb-3">
           <label for="description" class="form-label">Description:</label>
-          <textarea class="form-control" id="description" rows="4" required></textarea>
+          <textarea
+            class="form-control"
+            id="description"
+            rows="4"
+            required
+          ></textarea>
         </div>
-      
+
         <div class="mb-3">
           <label for="imgURL" class="form-label">Image URL:</label>
-          <input class="form-control" id="imgURL" type="url" required>
+          <input class="form-control" id="imgURL" type="url" required />
         </div>
-      
-        <button type="submit" class="btn btn-primary" id="save-btn">Save</button>
+
+        <button type="submit" class="btn btn-primary" id="save-btn">
+          Save
+        </button>
       </form>
-      
-     
     </main>
     <footer class="text-center">info</footer>
 

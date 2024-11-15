@@ -25,12 +25,19 @@ const addProducts = () => {
               <div class="card-body">
                 <h5 class="card-title">${product.name}</h5>
                 <p class="card-text">${product.description}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+                <a href="#" class="btn btn-primary">Aggiungi al Carrello</a>
+             <a href="#" class="btn btn-primary delete-btn">Elimina</a>
+                </div>
             </div>`;
             container.appendChild(newSlot);
+            const deleteBtn = newSlot.querySelector(".delete-btn");
+            deleteBtn.addEventListener("click", (e) => {
+              e.preventDefault();
+              newSlot.remove(); 
+            });
+          });
         })
-    })
+        
 
     .catch((error) => {
       console.log('errore', error);

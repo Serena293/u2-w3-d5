@@ -8,10 +8,11 @@ const saveBtn = document.getElementById("save-btn");
 class Product {
   constructor(_product, _price, _description, _imgURL, _brand) {
     this.name = _product;
-    this.description = _description;
-    this.imageUrl = _imgURL;
-    this.price = _price;    
+    this.description = _description;  
     this.brand = _brand;
+    this.imageUrl= _imgURL;
+    this.price = _price;    
+
   }
 }
 

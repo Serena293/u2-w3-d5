@@ -1,4 +1,5 @@
 const container = document.getElementById("main-container");
+// const backofficeLink = document.getElementById('backoffice-link')
  
 const addProducts = () => {
   fetch("https://striveschool-api.herokuapp.com/api/product/", {
@@ -37,5 +38,6 @@ const addProducts = () => {
 };
 
 addProducts();
+// backofficeLink.addEventListener('click', ()=>{ window.location.href = "backoffice.html";})
 
 

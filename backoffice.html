@@ -15,7 +15,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="index.html">Navbar</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -35,29 +35,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
+            
             <form class="d-flex" role="search">
               <input
                 class="form-control me-2"
@@ -74,21 +52,31 @@
       </nav>
       <h1>Dice & Decks</h1>
     </header>
-    <main class="flex-grow-1">
-      <form id="formNewProduct">
-        <form>
-            
-            <div class="mb-3">
-              <label for="newProduct" class="form-label">Product</label>
-              <input class="form-control" id="newProduct">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+    <main class="flex-grow-1">     <form id="formNewProduct">
+        <div class="mb-3">
+          <label for="newProduct" class="form-label">Product name:</label>
+          <input class="form-control" id="newProduct" type="text" required>
+        </div>
+      
+        <div class="mb-3">
+          <label for="price" class="form-label">Price:</label>
+          <input class="form-control" id="price" type="number" step="0.01" required>
+        </div>
+      
+        <div class="mb-3">
+          <label for="description" class="form-label">Description:</label>
+          <textarea class="form-control" id="description" rows="4" required></textarea>
+        </div>
+      
+        <div class="mb-3">
+          <label for="imgURL" class="form-label">Image URL:</label>
+          <input class="form-control" id="imgURL" type="url" required>
+        </div>
+      
+        <button type="submit" class="btn btn-primary" id="save-btn">Save</button>
       </form>
+      
+     
     </main>
     <footer class="text-center">info</footer>
 
@@ -97,6 +85,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./script/scritpt.js"></script>
+    <script src="./script/backoffice.js"></script>
   </body>
 </html>

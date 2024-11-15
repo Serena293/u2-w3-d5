@@ -27,6 +27,8 @@ const addProducts = () => {
                 <p class="card-text">${product.description}</p>
                 <a href="#" class="btn btn-primary">Aggiungi al Carrello</a>
              <a href="#" class="btn btn-primary delete-btn">Elimina</a>
+             <a href="./details.html?productId=${product._id}" class="btn btn-primary delete-btn">Dettagli</a>
+
                 </div>
             </div>`;
             container.appendChild(newSlot);
